@@ -1,0 +1,23 @@
+British Museum's Birthday: FixedDate,January,15
+Hedgehog Day: FixedDate,February,02
+International Polar Bear Day: FixedDate,February,27
+National Pig Day: FixedDate,March,01
+International Women's Day: FixedDate,March,08
+World Kidney Day: FixedDayOfMonth,March,Thursday,Second
+Cosmonaut's Day: FixedDate,April,12
+World Malaria Day: FixedDate,April,25
+Ed Balls Day: FixedDate,April,28
+International Dawn Chorus Day: FixedDayOfMonth,May,Sunday,First
+International Binturong Day: FixedDayOfMonth,May,Saturday,Second
+World Turtle Day: FixedDate,May,23
+Samoan Independence Day: FixedDate,June,01
+National Meadows Day: FixedDayOfMonth,July,Saturday,First
+World Nature Conservation Day: FixedDate,July,28
+International Tiger Day: FixedDate,July,29
+International Owl Awareness Day: FixedDate,August,04
+International Vulture Awareness Day: FixedDayOfMonth,September,Saturday,First
+International Red Panda Day: FixedDayOfMonth,September,Saturday,Third
+World Rhino Day: FixedDate,September,22
+International Sloth Day: FixedDate,October,20
+World Lemur Day: FixedDayOfMonth,October,Friday,Last
+International Men's Day: FixedDate,November,19
