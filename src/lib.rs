@@ -18,7 +18,7 @@ pub fn make_calendar<W: Write>(mut out: W) -> std::io::Result<()> {
             let date = datespec.to_date(year);
             let dtstart = format!("{:04}{:02}{:02}", date.year(), date.month(), date.day());
 
-            let uid = hash_event(year, &summary);
+            let uid = hash_event(year, summary);
 
             writeln!(out, "BEGIN:VEVENT")?;
             writeln!(out, "SUMMARY:{summary}", summary = summary)?;
