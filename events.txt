@@ -15,6 +15,7 @@ National Meadows Day: FixedDayOfMonth,July,Saturday,First
 World Nature Conservation Day: FixedDate,July,28
 International Tiger Day: FixedDate,July,29
 International Owl Awareness Day: FixedDate,August,04
+Black Cat Appreciation Day: FixedDate,August,17
 International Vulture Awareness Day: FixedDayOfMonth,September,Saturday,First
 International Red Panda Day: FixedDayOfMonth,September,Saturday,Third
 World Rhino Day: FixedDate,September,22
