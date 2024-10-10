@@ -22,7 +22,7 @@ jobs:
       - name: Package binary
         run: cp ./target/x86_64-unknown-linux-musl/release/lambda ./bootstrap && zip lambda.zip bootstrap && rm bootstrap
       - name: Deploy
-        uses: appleboy/lambda-action@master
+        uses: appleboy/lambda-action@v0.2.0
         with:
           aws_access_key_id: ${{ secrets.AWS_DEPLOY_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_DEPLOY_KEY }}
