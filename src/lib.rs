@@ -75,9 +75,14 @@ impl WeekInMonth {
 impl Event {
     fn to_date(&self, year: i32) -> NaiveDate {
         match self {
-            Event::FixedDate(month, day_of_month) => {
-                NaiveDate::from_ymd(year, month.number_from_month(), *day_of_month)
-            }
+            Event::FixedDate(month, day_of_month) => NaiveDate::from_ymd_opt(
+                year,
+                month.number_from_month(),
+                *day_of_month,
+            )
+            .expect(
+                "Failed to construct NaiveDate - ideally FixedDate would validate things better",
+            ),
             Event::FixedDayOfMonth(month, weekday, week_in_month) => {
                 let target = week_in_month.to_direction();
                 let (mut count, mut possible_date, next): (
@@ -87,8 +92,8 @@ impl Event {
                 ) = match target {
                     Direction::Forwards(count) => (
                         count.get(),
-                        NaiveDate::from_ymd(year, month.number_from_month(), 1),
-                        Box::new(|d| d.succ()),
+                        NaiveDate::from_ymd_opt(year, month.number_from_month(), 1).expect("Failed to construct NaiveDate - ideally FixedDate would validate things better"),
+                        Box::new(|d| d.succ_opt().expect("Failed to get successive date")),
                     ),
                     Direction::Backwards(count) => {
                         let next_month = month.succ();
@@ -98,13 +103,13 @@ impl Event {
                             } else {
                                 year
                             };
-                        let possible_date = NaiveDate::from_ymd(
+                        let possible_date = NaiveDate::from_ymd_opt(
                             year_of_next_month,
                             next_month.number_from_month(),
                             1,
-                        )
-                        .pred();
-                        (count.get(), possible_date, Box::new(|d| d.pred()))
+                        ).expect("Failed to construct NaiveDate - ideally FixedDate would validate things better")
+                        .pred_opt().expect("Failed to get previous date");
+                        (count.get(), possible_date, Box::new(|d| d.pred_opt().expect("Failed to get previous date")))
                     }
                 };
                 loop {
