@@ -24,3 +24,4 @@ World Lemur Day: FixedDayOfMonth,October,Friday,Last
 International Men's Day: FixedDate,November,19
 Ada Lovelace Day: FixedDayOfMonth,October,Tuesday,Second
 World Homeless Day: FixedDate,October,10
+International Migrants Day: FixedDate,December,18
