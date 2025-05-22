@@ -26,3 +26,4 @@ Ada Lovelace Day: FixedDayOfMonth,October,Tuesday,Second
 World Homeless Day: FixedDate,October,10
 International Migrants Day: FixedDate,December,18
 Raccoon Appreciation Day: FixedDate,October,1
+World Parrot Day: FixedDate,May,31
