@@ -27,3 +27,6 @@ World Homeless Day: FixedDate,October,10
 International Migrants Day: FixedDate,December,18
 Raccoon Appreciation Day: FixedDate,October,1
 World Parrot Day: FixedDate,May,31
+World Tuna Day: FixedDate,May,2
+World Bee Day: FixedDate,May,20
+World Tea Day: FixedDate,May,21
