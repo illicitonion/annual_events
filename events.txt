@@ -30,3 +30,4 @@ World Parrot Day: FixedDate,May,31
 World Tuna Day: FixedDate,May,2
 World Bee Day: FixedDate,May,20
 World Tea Day: FixedDate,May,21
+World Tapir Day: FixedDate,April,27
